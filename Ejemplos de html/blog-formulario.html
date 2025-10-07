@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico Sin Estilos CSS</title>
+</head>
+<body>
+
+    <h1>Contacto y Consultas</h1>
+    <p>Utiliza este formulario para enviarnos un mensaje.</p>
+
+    <form action="/enviar-mensaje-basico" method="post"> 
+
+        <p>
+            <label for="nombre_usuario">Nombre Completo:</label><br>
+            <input type="text" id="nombre_usuario" name="nombre" 
+                   placeholder="Escribe tu nombre aquí" required>
+        </p>
+
+        <p>
+            <label for="email_contacto">Correo Electrónico:</label><br>
+            <input type="email" id="email_contacto" name="correo" 
+                   placeholder="ejemplo@correo.com" required>
+        </p>
+
+        <p>
+            <label for="asunto_select">Selecciona el Asunto:</label><br>
+            <select id="asunto_select" name="motivo" required>
+                <option value="" disabled selected>-- Elige una opción --</option>
+                <option value="Soporte">Necesito Soporte Técnico</option>
+                <option value="Ventas">Información de Ventas</option>
+                <option value="Otro">Otro Motivo</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mensaje_texto">Escribe tu Mensaje:</label><br>
+            <textarea id="mensaje_texto" name="mensaje" rows="6" cols="50"
+                      placeholder="Sé lo más específico posible con tu consulta."></textarea>
+            </p>
+
+        <p>
+            <button type="submit">
+                Enviar Formulario
+            </button>
+        </p>
+
+    </form>
+
+</body>
+</html>
