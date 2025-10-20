@@ -1,0 +1,30 @@
+/*
+* Este es el CSS del css.html
+* 
+*
+*/
+
+*{
+color:blue;
+}
+
+p{color:violet;}
+
+h1,h3 { 
+   color:black;
+   background-color:pink;
+}
+
+h2 {
+   color:#0FFFFF;
+   background-color:black
+   
+}
+
+p a{
+     color:red;
+}
+
+p a b {
+     color:purple;
+}
